@@ -1,0 +1,153 @@
+#main {
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: rgb(202, 223, 232);
+}  
+    #main-top {
+        width: 80%;
+        height: 50%;
+        margin: 0 auto;
+        padding-top: 40px;
+    } 
+        #top {
+            width: 100%;
+            height: 400px;
+            background-color: #eee;
+            margin: 0 auto;
+        }
+            #top-1 {
+                height: 50px;
+                background-color: rgb(241, 196, 15);
+            }
+            #top-1 img {
+                width: 50px;
+                border-radius: 5px;
+                float: left;
+            }
+            #top-1 h4 {
+                padding-left: 15px;
+                float: left;
+                margin: 0 auto;
+            }
+            h2 {
+                text-align: center;
+            }
+            #top-2 {
+                height: 300px;
+            }
+            #dog1 {
+                width: 60%;
+                height: 300px;
+            }
+            #top-3 {
+                height: 50px;
+                background-color: rgb(26, 188, 156);
+            }
+    #main-bottom {
+        width: 100%;
+        height: 300px;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+        #bottom-1 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid #ccc;
+            background-color: #eee  ;
+        }
+            #bt1 {
+                width: 250px;
+                height: 200px;
+                background-image: url(../images/cat1.jpg);
+                background-repeat: no-repeat;
+                position: relative;
+            }
+            #bt1-1 {
+                width: 50px;
+                height: 50px;
+                background-image: url(../images/user.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                float: left;
+                margin: 0 auto;
+                position: relative;
+                bottom: 200px;
+            }
+            
+        #bottom-2 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+            #bt2 {
+                width: 250px;
+                height: 200px;
+                background-image: url(../images/cat2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            #bt2-1 {
+                width: 50px;
+                height: 50px;
+                background-image: url(../images/user.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                float: left;
+                margin: 0 auto;
+                position: relative;
+                bottom: 200px;
+            }
+        #bottom-3 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+            #bt3 {
+                width: 250px;
+                height: 200px;
+                background-image: url(../images/dog2.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+
+            }
+            #bt3-1 {
+                width: 50px;
+                height: 50px;
+                background-image: url(../images/user.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                float: left;
+                margin: 0 auto;
+                position: relative;
+                bottom: 200px;
+            }
+h1 {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(81, 185, 163);
+    color: white;
+}
+input {
+    margin-top: 20px;
+}
+#heart {
+    width: 50px;
+    float: left;
+}
+#pTag { 
+    width: 5px;
+    float: left;
+}
+#topheart {
+    width: 50px;
+    float: left;
+}
+#hearTag {
+    float: left;
+}

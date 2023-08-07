@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserMapper">
+	<resultMap type="user.model.vo.User" id="userResultMap">
+		<id property="userId" column="USER_ID" />
+		<result property="userPw" column="USER_PW" />
+		<result property="userName" column="USER_NAME" />
+		<result property="userAge" column="USER_AGE" />
+		<result property="userEmail" column="USER_EMAIL" />
+		<result property="userPhone" column="USER_PHONE" />
+		<result property="userAddress" column="USER_ADDRESS" />
+	</resultMap>
+
+	<insert id="insertUser">
+		INSERT INTO USER_TBL VALUES(#{userId }, #{userPw }, #{userName }, #{userAge }, #{userEmail}, #{userPhone }, #{userAddress })
+	</insert>
+	<insert id="updateUser">
+		UPDATE USER_TBL SET USER_PW = #{userPw }, #{userName }, #{userEmail }, #{userPhone }, #{userAddress } WHERE USER_ID = #{userId }
+	</insert>
+
+
+	<select id="selectCheckLogin" resultMap="userResultMap">
+		SELECT * FROM USER_TBL WHERE USER_ID = #{userId } AND USER_PW = #{userPw }
+	</select>
+	
+	<select id="selectOneById" resultMap="userResultMap">
+		SELECT * FROM USER_TBL WHERE USER_ID = #{userId }
+	</select>
+</mapper>

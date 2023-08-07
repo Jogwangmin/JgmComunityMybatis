@@ -1,0 +1,6 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border추가 계산하지마!! */
+    box-sizing: border-box;
+}

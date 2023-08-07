@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border추가 계산하지마!! */
+    box-sizing: border-box;
+}
+#main {
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(216, 224, 93);
+}
+#table1 {
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+table {
+    border: 1px solid black;
+    background-color: white;
+}
+th,td {
+    border: 1px solid black;
+    height: 50px;
+    width: 300px;
+}
+th {
+    background-color: #ccc;
+}
+#table2 {
+    float: left;
+}
+h1 {
+    margin-top: 20px;
+}

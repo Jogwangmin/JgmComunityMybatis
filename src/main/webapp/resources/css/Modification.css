@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main {
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(216, 224, 93);
+}
+#profile {
+    width: 100%;
+}
+#follower-count {
+    width: 200px;
+}
+#profile h3 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+#profile-info {
+    margin-top: 100px;
+    width: 500px;
+    float: left;
+}
+#profile-picture {
+    border-radius: 100%;
+}
+#profile-name {
+    line-height: 50px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 5pxs;
+    background-color: aliceblue;
+}
+#Modification {
+    width: 400px;
+    float: left;
+}
+form>ul li {
+    width: 500px;
+    display: block;
+    margin: 10px;
+    padding: 5px;
+}
+form li {
+    list-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin: 0;
+    display: block;
+}
+form label {
+    width: 130px;
+    float: left;
+}
+[type=text], [type=password], [type=email] {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    float: left;
+}
+#profile-change {
+    width: 200px;
+    height: 52px;
+}
+#sumbitBtn {
+    position: relative;
+    left: 195px;
+    top: 100px;
+}
+#change {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(142, 142, 204);
+}
+#ok, #cancle {
+    width: 100px;
+    height: 40px;
+}
