@@ -14,6 +14,11 @@ public class BoardDAO {
 		return result;
 	}
 
+	public int deleteBoardByNo(SqlSession session, int boardNo) {
+		int result = session.delete("BoardMapper.deleteBoardByNo", boardNo);
+		return result;
+	}
+
 	public List<Board> selectBoardList(SqlSession session, int currentPage) {
 		int limit = 10;
 		int offset = (currentPage-1)*limit;

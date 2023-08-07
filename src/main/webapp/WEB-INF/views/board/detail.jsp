@@ -19,7 +19,18 @@
                         <ul>
                             <li>추천수 ${board.likeCount }</li>
                             <li>댓글 0</li>
+                            <li>
+                        		<a href="javascript:void(0)" onclick="deleteCheck();" >삭제하기</a><br>
+                            </li>
                         </ul>
+                        <script>
+							const deleteCheck = () => {
+								const boardNo = '${board.boardNo }';
+								if(confirm("삭제하시겠습니까?")) {
+									location.href = "/board/delete.do?boardNo=" + boardNo;
+								}
+							}
+						</script>
                     </div>
                 </div>
                 <div id="main-mid">

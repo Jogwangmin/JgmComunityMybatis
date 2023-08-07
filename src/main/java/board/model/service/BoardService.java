@@ -46,6 +46,18 @@ public class BoardService {
 		return pd;
 	}
 
+	public int deleteBoardByNo(int boardNo) {
+		SqlSession session = SqlSessionTemplate.getSqlSession();
+		int result = bDao.deleteBoardByNo(session, boardNo);
+		if(result > 0) {
+			session.commit();
+		}else {
+			session.rollback();
+		}
+		session.close();
+		return result;
+	}
+
 
 
 }
