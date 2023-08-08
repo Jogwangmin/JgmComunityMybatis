@@ -15,7 +15,7 @@ public class BoardDAO {
 	}
 
 	public int deleteBoardByNo(SqlSession session, int boardNo) {
-		int result = session.delete("BoardMapper.deleteBoardByNo", boardNo);
+		int result = session.insert("BoardMapper.deleteBoardByNo", boardNo);
 		return result;
 	}
 

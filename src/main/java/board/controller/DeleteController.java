@@ -34,7 +34,7 @@ public class DeleteController extends HttpServlet {
 		int boardNo = Integer.parseInt(request.getParameter("boardNo"));
 		int result = service.deleteBoardByNo(boardNo);
 		if(result > 0) {
-			response.sendRedirect("/board/list.do?currentPage=1");
+			response.sendRedirect("/board/list.do");
 		}else {
 			request.setAttribute("msg", "게시글 삭제가 완료되지 않았습니다.");
 			RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/common/serviceFailed.jsp");

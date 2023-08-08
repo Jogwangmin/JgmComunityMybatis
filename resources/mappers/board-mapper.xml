@@ -12,9 +12,14 @@
 		<result property="viewCount" 	column="BOARD_VIEWCOUNT" />
 		<result property="likeCount" 	column="BOARD_LIKECOUNT" />
 	</resultMap>
+	
 	<insert id="insertBoard">
-		INSERT INTO BOARD_TBL VALUES(SEQ_BOARDNO.NEXTVAL, #{boardSubject }, #{boardContent },'admin',DEFAULT,DEFAULT, 0)
+		INSERT INTO BOARD_TBL VALUES(SEQ_BOARDNO.NEXTVAL, #{boardSubject }, #{boardContent },'admin',DEFAULT,DEFAULT,DEFAULT)
 	</insert>
+	
+	<delete id="deleteBoardByNo">
+		DELETE FROM BOARD_TBL WHERE BOARD_NO = #{boardNo }
+	</delete>
 	
 	<select id="selectBoardList" resultMap="boardResultMap">
 		SELECT * FROM BOARD_TBL ORDER BY BOARD_NO DESC
